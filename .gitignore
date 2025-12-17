@@ -1,0 +1,8 @@
+/vendor/
+/node_modules/
+/storage/*
+!/storage/.gitignore
+/.env
+/.phpunit.result.cache
+/.idea/
+.vscode/
