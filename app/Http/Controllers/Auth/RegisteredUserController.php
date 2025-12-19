@@ -59,7 +59,7 @@ class RegisteredUserController extends Controller
         ]);
 
         event(new Registered($user));
-        $role_r = Role::findByName('owner');
+        $role_r = Role::findByName('Owner')??Role::findByName('owner');
         $user->assignRole($role_r);
         Auth::login($user);
 
